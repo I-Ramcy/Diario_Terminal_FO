@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bitácora RAMCY-CORP</title>
+        
+        <!-- Aquí empieza el CSS interno -->
+        <style>
+            body {
+                background-color: #050505; /* Fondo casi negro */
+                color: #33ff33; /* Verde fósforo brillante */
+                font-family: 'Courier New', Courier, monospace; /* Letra de terminal */
+                padding: 40px;
+                line-height: 1.5; /* Espacio entre líneas para que se lea mejor */
+            }
+
+            h1, h2, h3, h4, h6 {
+                font-weight: normal; /* Quita la negrita por defecto */
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                border-bottom: 2px dashed #33ff33; /* Línea punteada abajo */
+                padding-bottom: 10px;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-top: 5px;
+            }
+
+            h3 {
+                margin-top: 30px;
+                font-size: 1.2rem;
+            }
+
+            /* Estilo para la lista de opciones */
+            ol {
+                list-style-type: none; /* Quita los números por defecto del navegador */
+                padding-left: 0;
+                margin-top: 20px;
+            }
+
+            li {
+                margin-bottom: 15px;
+            }
+
+            li {
+                cursor: pointer;
+                font-size: 1.2rem;
+                width: fit-content;
+                padding: 5px 10px;
+                transition: background-color 0.2s;
+            }
+
+            /* Efecto al pasar el mouse */
+            li:hover {
+                background-color: #33ff33;
+                color: #050505;
+            }
+            
+
+            footer {
+                margin-top: 60px;
+                border-top: 1px solid #33ff33;
+                padding-top: 15px;
+                opacity: 0.7; /* Hace que el texto sea un poco más tenue */
+            }
+
+            h6 {
+                font-size: 0.8rem;
+                max-width: 800px;
+            }
+
+            a.opcion {
+                color: #33ff33;
+                text-decoration: none;
+                font-size: 1.2rem;
+                cursor: pointer;
+                display: inline-block;
+                padding: 5px 10px;
+                transition: background-color 0.2s;
+            }
+
+            a.opcion:hover {
+                background-color: #33ff33;
+                color: #050505;
+}
+        </style>
+    </head>
+
+    <body>
+        <h1>RAMCY-CORP</h1>
+        <h2>BITÁCORA</h2>
+        
+        <h3>Por favor, seleccione una opción para continuar:</h3>
+        
+        <!-- Envolvemos las opciones para poder darles estilo luego -->
+        <div class="menu">
+            <ol>
+                <li><a href="/nuevo" class="opcion">1. Introducir registro</a></li>
+                <li><a href="/ver" class="opcion">2. Revisar registros</a></li>
+                <li><a href="/" class="opcion">3. Salir (Recargar)</a></li>
+            </ol>
+        </div>
+
+        <footer>
+            <h6>No introduzca información que comprometa a RAMCY-CORP. Cualquier acción en contra de esta política resultará en la invalidación de los accesos a esta terminal así como la terminación inmediata de su protección personal.</h6>
+        </footer>
+    </body>
+</html>
